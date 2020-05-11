@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		44179F152465ED600068E4B7 /* CAVolumeCurve.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4417D30F246445F20061BF2C /* CAVolumeCurve.cpp */; };
+		44179F162465ED630068E4B7 /* CAPThread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4417D311246445FE0061BF2C /* CAPThread.cpp */; };
+		44179F172465ED690068E4B7 /* CARingBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4417D3142464460E0061BF2C /* CARingBuffer.cpp */; };
+		44179F182465ED750068E4B7 /* CACFArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4417D33D246450D00061BF2C /* CACFArray.cpp */; };
+		44179F192465ED7B0068E4B7 /* CADebugger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4417D346246451150061BF2C /* CADebugger.cpp */; };
+		44179F1A2465ED840068E4B7 /* CADebugMacros.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4417D348246451260061BF2C /* CADebugMacros.cpp */; };
+		44179F1B2465ED870068E4B7 /* CADebugPrintf.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4417D34A2464512D0061BF2C /* CADebugPrintf.cpp */; };
+		44179F1E2465ED990068E4B7 /* CADispatchQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 44179F1C2465ED960068E4B7 /* CADispatchQueue.cpp */; };
+		44179F1F2465EDA20068E4B7 /* CACFString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4417D3442464510E0061BF2C /* CACFString.cpp */; };
+		44179F202465F0E70068E4B7 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44898FD02463363900608C25 /* CoreFoundation.framework */; };
+		44898FFC24633E0500608C25 /* RDC_Device.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 44898FDC24633E0000608C25 /* RDC_Device.cpp */; };
+		44898FFD24633E0500608C25 /* RDC_VolumeControl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 44898FDF24633E0000608C25 /* RDC_VolumeControl.cpp */; };
+		44898FFE24633E0500608C25 /* RDC_MuteControl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 44898FE224633E0000608C25 /* RDC_MuteControl.cpp */; };
+		44898FFF24633E0500608C25 /* RDC_Object.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 44898FE424633E0000608C25 /* RDC_Object.cpp */; };
+		4489900024633E0500608C25 /* RDC_PlugInInterface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 44898FE524633E0000608C25 /* RDC_PlugInInterface.cpp */; };
+		4489900224633E0500608C25 /* RDC_Stream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 44898FEB24633E0100608C25 /* RDC_Stream.cpp */; };
+		4489900324633E0500608C25 /* RDC_TaskQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 44898FEE24633E0200608C25 /* RDC_TaskQueue.cpp */; };
+		4489900524633E0500608C25 /* RDC_NullDevice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 44898FF124633E0200608C25 /* RDC_NullDevice.cpp */; };
+		4489900624633E0500608C25 /* RDC_AbstractDevice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 44898FF224633E0200608C25 /* RDC_AbstractDevice.cpp */; };
+		4489900824633E0500608C25 /* RDC_Control.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 44898FF424633E0300608C25 /* RDC_Control.cpp */; };
+		4489900A24633E0500608C25 /* RDC_WrappedAudioEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 44898FF724633E0300608C25 /* RDC_WrappedAudioEngine.cpp */; };
+		4489900B24633E0500608C25 /* RDC_PlugIn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 44898FF824633E0400608C25 /* RDC_PlugIn.cpp */; };
+		4489904024633EFD00608C25 /* RDC_Utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4489901324633EFC00608C25 /* RDC_Utils.cpp */; };
+		4489904124633EFD00608C25 /* RDC_Clients.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4489901824633EFD00608C25 /* RDC_Clients.cpp */; };
+		4489904224633EFD00608C25 /* RDC_ClientMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4489901D24633EFD00608C25 /* RDC_ClientMap.cpp */; };
+		4489904324633EFD00608C25 /* RDC_Client.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4489901E24633EFD00608C25 /* RDC_Client.cpp */; };
+		4489904D24633EFD00608C25 /* CAHostTimeBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4489903A24633EFD00608C25 /* CAHostTimeBase.cpp */; };
+		4489904E24633EFD00608C25 /* CAMutex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4489903D24633EFD00608C25 /* CAMutex.cpp */; };
+		4489905124633F0900608C25 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44898FCE24632A8300608C25 /* Accelerate.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		44179F112465ED230068E4B7 /* CAMutex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAMutex.h; sourceTree = "<group>"; };
+		44179F122465ED2D0068E4B7 /* CAException.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAException.h; sourceTree = "<group>"; };
+		44179F142465ED4E0068E4B7 /* CAHostTimeBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAHostTimeBase.h; sourceTree = "<group>"; };
+		44179F1C2465ED960068E4B7 /* CADispatchQueue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CADispatchQueue.cpp; sourceTree = "<group>"; };
+		4417D30F246445F20061BF2C /* CAVolumeCurve.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CAVolumeCurve.cpp; sourceTree = "<group>"; };
+		4417D311246445FE0061BF2C /* CAPThread.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CAPThread.cpp; sourceTree = "<group>"; };
+		4417D312246445FE0061BF2C /* CAPThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAPThread.h; sourceTree = "<group>"; };
+		4417D3142464460E0061BF2C /* CARingBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CARingBuffer.cpp; sourceTree = "<group>"; };
+		4417D33D246450D00061BF2C /* CACFArray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CACFArray.cpp; sourceTree = "<group>"; };
+		4417D3442464510E0061BF2C /* CACFString.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CACFString.cpp; sourceTree = "<group>"; };
+		4417D346246451150061BF2C /* CADebugger.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CADebugger.cpp; sourceTree = "<group>"; };
+		4417D348246451260061BF2C /* CADebugMacros.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CADebugMacros.cpp; sourceTree = "<group>"; };
+		4417D34A2464512D0061BF2C /* CADebugPrintf.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CADebugPrintf.cpp; sourceTree = "<group>"; };
+		4417D34C246459230061BF2C /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AudioKit.framework; sourceTree = "<group>"; };
+		4429AB1E24642A1400B08ABE /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+		443188C424574CC2003B8B01 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		443188CD245774FD003B8B01 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		4437A8D12450713800009D87 /* libSDL2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSDL2.a; path = SDL/lib/libSDL2.a; sourceTree = "<group>"; };
+		4437A8D22450714100009D87 /* libparsec.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libparsec.dylib; path = ParsecSDK/libparsec.dylib; sourceTree = "<group>"; };
+		4437A8D724507EE400009D87 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		4437A8D924507EFD00009D87 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		4437A8DB24507F0800009D87 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		4437A8DD24507F1400009D87 /* ForceFeedback.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ForceFeedback.framework; path = System/Library/Frameworks/ForceFeedback.framework; sourceTree = SDKROOT; };
+		4437A8DF24507F1E00009D87 /* CoreAudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudioKit.framework; path = System/Library/Frameworks/CoreAudioKit.framework; sourceTree = SDKROOT; };
+		4437A8E124507F2200009D87 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		4437A8E324507F3B00009D87 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		4437A8E524507F5700009D87 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		447B45B124646DBF00EFA7C4 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		44898F0624631B4B00608C25 /* DriverKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DriverKit.framework; path = System/Library/Frameworks/DriverKit.framework; sourceTree = SDKROOT; };
+		44898F65246325AF00608C25 /* CoreAudioTypes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudioTypes.framework; path = System/Library/Frameworks/CoreAudioTypes.framework; sourceTree = SDKROOT; };
+		44898F6E2463285200608C25 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		44898FCE24632A8300608C25 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		44898FD02463363900608C25 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		44898FD624633DCF00608C25 /* RDCAudio.driver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RDCAudio.driver; sourceTree = BUILT_PRODUCTS_DIR; };
+		44898FD824633DCF00608C25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44898FDC24633E0000608C25 /* RDC_Device.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RDC_Device.cpp; sourceTree = "<group>"; };
+		44898FDD24633E0000608C25 /* RDC_Object.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDC_Object.h; sourceTree = "<group>"; };
+		44898FDE24633E0000608C25 /* RDC_TaskQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDC_TaskQueue.h; sourceTree = "<group>"; };
+		44898FDF24633E0000608C25 /* RDC_VolumeControl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RDC_VolumeControl.cpp; sourceTree = "<group>"; };
+		44898FE024633E0000608C25 /* RDC_VolumeControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDC_VolumeControl.h; sourceTree = "<group>"; };
+		44898FE124633E0000608C25 /* RDC_Stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDC_Stream.h; sourceTree = "<group>"; };
+		44898FE224633E0000608C25 /* RDC_MuteControl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RDC_MuteControl.cpp; sourceTree = "<group>"; };
+		44898FE424633E0000608C25 /* RDC_Object.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RDC_Object.cpp; sourceTree = "<group>"; };
+		44898FE524633E0000608C25 /* RDC_PlugInInterface.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RDC_PlugInInterface.cpp; sourceTree = "<group>"; };
+		44898FE624633E0000608C25 /* RDC_PlugIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDC_PlugIn.h; sourceTree = "<group>"; };
+		44898FE724633E0100608C25 /* RDC_AudibleState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDC_AudibleState.h; sourceTree = "<group>"; };
+		44898FE924633E0100608C25 /* RDC_Control.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDC_Control.h; sourceTree = "<group>"; };
+		44898FEA24633E0100608C25 /* RDC_AbstractDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDC_AbstractDevice.h; sourceTree = "<group>"; };
+		44898FEB24633E0100608C25 /* RDC_Stream.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RDC_Stream.cpp; sourceTree = "<group>"; };
+		44898FEC24633E0100608C25 /* RDC_Device.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDC_Device.h; sourceTree = "<group>"; };
+		44898FED24633E0100608C25 /* RDC_NullDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDC_NullDevice.h; sourceTree = "<group>"; };
+		44898FEE24633E0200608C25 /* RDC_TaskQueue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RDC_TaskQueue.cpp; sourceTree = "<group>"; };
+		44898FF024633E0200608C25 /* RDC_WrappedAudioEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDC_WrappedAudioEngine.h; sourceTree = "<group>"; };
+		44898FF124633E0200608C25 /* RDC_NullDevice.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RDC_NullDevice.cpp; sourceTree = "<group>"; };
+		44898FF224633E0200608C25 /* RDC_AbstractDevice.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RDC_AbstractDevice.cpp; sourceTree = "<group>"; };
+		44898FF424633E0300608C25 /* RDC_Control.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RDC_Control.cpp; sourceTree = "<group>"; };
+		44898FF624633E0300608C25 /* RDC_MuteControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDC_MuteControl.h; sourceTree = "<group>"; };
+		44898FF724633E0300608C25 /* RDC_WrappedAudioEngine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RDC_WrappedAudioEngine.cpp; sourceTree = "<group>"; };
+		44898FF824633E0400608C25 /* RDC_PlugIn.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RDC_PlugIn.cpp; sourceTree = "<group>"; };
+		44898FFA24633E0400608C25 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4489901224633EFC00608C25 /* RDC_TestUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDC_TestUtils.h; sourceTree = "<group>"; };
+		4489901324633EFC00608C25 /* RDC_Utils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RDC_Utils.cpp; sourceTree = "<group>"; };
+		4489901524633EFC00608C25 /* RDC_Types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDC_Types.h; sourceTree = "<group>"; };
+		4489901624633EFC00608C25 /* RDC_Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDC_Utils.h; sourceTree = "<group>"; };
+		4489901824633EFD00608C25 /* RDC_Clients.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RDC_Clients.cpp; sourceTree = "<group>"; };
+		4489901924633EFD00608C25 /* RDC_Client.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDC_Client.h; sourceTree = "<group>"; };
+		4489901A24633EFD00608C25 /* RDC_ClientMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDC_ClientMap.h; sourceTree = "<group>"; };
+		4489901B24633EFD00608C25 /* RDC_ClientTasks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDC_ClientTasks.h; sourceTree = "<group>"; };
+		4489901C24633EFD00608C25 /* RDC_Clients.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDC_Clients.h; sourceTree = "<group>"; };
+		4489901D24633EFD00608C25 /* RDC_ClientMap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RDC_ClientMap.cpp; sourceTree = "<group>"; };
+		4489901E24633EFD00608C25 /* RDC_Client.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RDC_Client.cpp; sourceTree = "<group>"; };
+		4489902024633EFD00608C25 /* CADebugger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADebugger.h; sourceTree = "<group>"; };
+		4489902724633EFD00608C25 /* CAVolumeCurve.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAVolumeCurve.h; sourceTree = "<group>"; };
+		4489902924633EFD00608C25 /* CACFString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CACFString.h; sourceTree = "<group>"; };
+		4489902F24633EFD00608C25 /* CADebugPrintf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADebugPrintf.h; sourceTree = "<group>"; };
+		4489903124633EFD00608C25 /* CAPropertyAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAPropertyAddress.h; sourceTree = "<group>"; };
+		4489903324633EFD00608C25 /* CARingBuffer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = CARingBuffer.h; sourceTree = "<group>"; };
+		4489903624633EFD00608C25 /* CADispatchQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADispatchQueue.h; sourceTree = "<group>"; };
+		4489903724633EFD00608C25 /* CADebugMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADebugMacros.h; sourceTree = "<group>"; };
+		4489903A24633EFD00608C25 /* CAHostTimeBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CAHostTimeBase.cpp; sourceTree = "<group>"; };
+		4489903B24633EFD00608C25 /* CACFArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CACFArray.h; sourceTree = "<group>"; };
+		4489903D24633EFD00608C25 /* CAMutex.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CAMutex.cpp; sourceTree = "<group>"; };
+		44DE19E7246966C2003143E8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		44DE19E924696788003143E8 /* CAAtomicStack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAAtomicStack.h; sourceTree = "<group>"; };
+		44DE19EA24696794003143E8 /* CAAtomic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAAtomic.h; sourceTree = "<group>"; };
+		44DE19EB246967A2003143E8 /* CACFDictionary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CACFDictionary.h; sourceTree = "<group>"; };
+		44DE19EC246967CC003143E8 /* CABitOperations.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CABitOperations.h; sourceTree = "<group>"; };
+		44DE19ED246967E7003143E8 /* CACFNumber.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CACFNumber.h; sourceTree = "<group>"; };
+		44DE19EE246969B5003143E8 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		44E9989C245092DD0099F066 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		44E998A22450B0450099F066 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		44E998A32450B04E0099F066 /* libiconv.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.2.tbd; path = usr/lib/libiconv.2.tbd; sourceTree = SDKROOT; };
+		44EBFBE52459B034002DA236 /* libswiftCore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libswiftCore.tbd; path = usr/lib/swift/libswiftCore.tbd; sourceTree = SDKROOT; };
+		44EBFBEA2459B337002DA236 /* libswiftCore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftCore.dylib; path = SwiftRuntime/libswiftCore.dylib; sourceTree = "<group>"; };
+		44EBFBEE2459B368002DA236 /* libswiftCoreGraphics.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftCoreGraphics.dylib; path = SwiftRuntime/libswiftCoreGraphics.dylib; sourceTree = "<group>"; };
+		44EBFBF32459B38B002DA236 /* libswiftCoreFoundation.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftCoreFoundation.dylib; path = SwiftRuntime/libswiftCoreFoundation.dylib; sourceTree = "<group>"; };
+		44EBFBF42459B38B002DA236 /* libswiftDispatch.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftDispatch.dylib; path = SwiftRuntime/libswiftDispatch.dylib; sourceTree = "<group>"; };
+		44EBFBF52459B38B002DA236 /* libswiftFoundation.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftFoundation.dylib; path = SwiftRuntime/libswiftFoundation.dylib; sourceTree = "<group>"; };
+		44EBFBF62459B38B002DA236 /* libswiftObjectiveC.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftObjectiveC.dylib; path = SwiftRuntime/libswiftObjectiveC.dylib; sourceTree = "<group>"; };
+		44EBFBF72459B38B002DA236 /* libswiftDarwin.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswiftDarwin.dylib; path = SwiftRuntime/libswiftDarwin.dylib; sourceTree = "<group>"; };
+		7C1B97D643A7CF332F23415E /* Pods_RDCHost.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RDCHost.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE2C9B0F6221937D63B27492 /* Pods_RDCClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RDCClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE586EAB2B806C940B349C1D /* Pods_RDCAudio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RDCAudio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		44898FD324633DCF00608C25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44179F202465F0E70068E4B7 /* CoreFoundation.framework in Frameworks */,
+				4489905124633F0900608C25 /* Accelerate.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4437A8D02450713800009D87 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				447B45B124646DBF00EFA7C4 /* AVFoundation.framework */,
+				4417D34C246459230061BF2C /* AudioKit.framework */,
+				4429AB1E24642A1400B08ABE /* AudioUnit.framework */,
+				44898FD02463363900608C25 /* CoreFoundation.framework */,
+				44898FCE24632A8300608C25 /* Accelerate.framework */,
+				44898F6E2463285200608C25 /* Foundation.framework */,
+				44898F65246325AF00608C25 /* CoreAudioTypes.framework */,
+				44EBFBF32459B38B002DA236 /* libswiftCoreFoundation.dylib */,
+				44EBFBF72459B38B002DA236 /* libswiftDarwin.dylib */,
+				44EBFBF42459B38B002DA236 /* libswiftDispatch.dylib */,
+				44EBFBF52459B38B002DA236 /* libswiftFoundation.dylib */,
+				44EBFBF62459B38B002DA236 /* libswiftObjectiveC.dylib */,
+				44EBFBEE2459B368002DA236 /* libswiftCoreGraphics.dylib */,
+				44EBFBEA2459B337002DA236 /* libswiftCore.dylib */,
+				44EBFBE52459B034002DA236 /* libswiftCore.tbd */,
+				443188CD245774FD003B8B01 /* OpenGL.framework */,
+				443188C424574CC2003B8B01 /* GLKit.framework */,
+				44E998A32450B04E0099F066 /* libiconv.2.tbd */,
+				44E998A22450B0450099F066 /* libiconv.tbd */,
+				44E9989C245092DD0099F066 /* AppKit.framework */,
+				4437A8E524507F5700009D87 /* Carbon.framework */,
+				4437A8E324507F3B00009D87 /* QuartzCore.framework */,
+				4437A8E124507F2200009D87 /* IOKit.framework */,
+				4437A8DF24507F1E00009D87 /* CoreAudioKit.framework */,
+				4437A8DD24507F1400009D87 /* ForceFeedback.framework */,
+				4437A8DB24507F0800009D87 /* CoreMedia.framework */,
+				4437A8D924507EFD00009D87 /* AudioToolbox.framework */,
+				4437A8D724507EE400009D87 /* CoreAudio.framework */,
+				4437A8D22450714100009D87 /* libparsec.dylib */,
+				4437A8D12450713800009D87 /* libSDL2.a */,
+				44898F0624631B4B00608C25 /* DriverKit.framework */,
+				FE586EAB2B806C940B349C1D /* Pods_RDCAudio.framework */,
+				BE2C9B0F6221937D63B27492 /* Pods_RDCClient.framework */,
+				7C1B97D643A7CF332F23415E /* Pods_RDCHost.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		446371B124506C60002A96CE = {
+			isa = PBXGroup;
+			children = (
+				44DE19E7246966C2003143E8 /* README.md */,
+				44DE19EE246969B5003143E8 /* Makefile */,
+				4489901F24633EFD00608C25 /* PublicUtility */,
+				44898FD724633DCF00608C25 /* RDCAudio */,
+				446371BB24506C60002A96CE /* Products */,
+				4437A8D02450713800009D87 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		446371BB24506C60002A96CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				44898FD624633DCF00608C25 /* RDCAudio.driver */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		44898FD724633DCF00608C25 /* RDCAudio */ = {
+			isa = PBXGroup;
+			children = (
+				4489901724633EFD00608C25 /* DeviceClients */,
+				4489901124633EFC00608C25 /* SharedSource */,
+				44898FFA24633E0400608C25 /* Info.plist */,
+				44898FF224633E0200608C25 /* RDC_AbstractDevice.cpp */,
+				44898FEA24633E0100608C25 /* RDC_AbstractDevice.h */,
+				44898FE724633E0100608C25 /* RDC_AudibleState.h */,
+				44898FF424633E0300608C25 /* RDC_Control.cpp */,
+				44898FE924633E0100608C25 /* RDC_Control.h */,
+				44898FDC24633E0000608C25 /* RDC_Device.cpp */,
+				44898FEC24633E0100608C25 /* RDC_Device.h */,
+				44898FE224633E0000608C25 /* RDC_MuteControl.cpp */,
+				44898FF624633E0300608C25 /* RDC_MuteControl.h */,
+				44898FF124633E0200608C25 /* RDC_NullDevice.cpp */,
+				44898FED24633E0100608C25 /* RDC_NullDevice.h */,
+				44898FE424633E0000608C25 /* RDC_Object.cpp */,
+				44898FDD24633E0000608C25 /* RDC_Object.h */,
+				44898FF824633E0400608C25 /* RDC_PlugIn.cpp */,
+				44898FE624633E0000608C25 /* RDC_PlugIn.h */,
+				44898FE524633E0000608C25 /* RDC_PlugInInterface.cpp */,
+				44898FEB24633E0100608C25 /* RDC_Stream.cpp */,
+				44898FE124633E0000608C25 /* RDC_Stream.h */,
+				44898FEE24633E0200608C25 /* RDC_TaskQueue.cpp */,
+				44898FDE24633E0000608C25 /* RDC_TaskQueue.h */,
+				44898FDF24633E0000608C25 /* RDC_VolumeControl.cpp */,
+				44898FE024633E0000608C25 /* RDC_VolumeControl.h */,
+				44898FF724633E0300608C25 /* RDC_WrappedAudioEngine.cpp */,
+				44898FF024633E0200608C25 /* RDC_WrappedAudioEngine.h */,
+				44898FD824633DCF00608C25 /* Info.plist */,
+			);
+			path = RDCAudio;
+			sourceTree = "<group>";
+		};
+		4489901124633EFC00608C25 /* SharedSource */ = {
+			isa = PBXGroup;
+			children = (
+				4489901224633EFC00608C25 /* RDC_TestUtils.h */,
+				4489901324633EFC00608C25 /* RDC_Utils.cpp */,
+				4489901524633EFC00608C25 /* RDC_Types.h */,
+				4489901624633EFC00608C25 /* RDC_Utils.h */,
+			);
+			path = SharedSource;
+			sourceTree = "<group>";
+		};
+		4489901724633EFD00608C25 /* DeviceClients */ = {
+			isa = PBXGroup;
+			children = (
+				4489901824633EFD00608C25 /* RDC_Clients.cpp */,
+				4489901924633EFD00608C25 /* RDC_Client.h */,
+				4489901A24633EFD00608C25 /* RDC_ClientMap.h */,
+				4489901B24633EFD00608C25 /* RDC_ClientTasks.h */,
+				4489901C24633EFD00608C25 /* RDC_Clients.h */,
+				4489901D24633EFD00608C25 /* RDC_ClientMap.cpp */,
+				4489901E24633EFD00608C25 /* RDC_Client.cpp */,
+			);
+			path = DeviceClients;
+			sourceTree = "<group>";
+		};
+		4489901F24633EFD00608C25 /* PublicUtility */ = {
+			isa = PBXGroup;
+			children = (
+				44DE19EA24696794003143E8 /* CAAtomic.h */,
+				44DE19E924696788003143E8 /* CAAtomicStack.h */,
+				44DE19EC246967CC003143E8 /* CABitOperations.h */,
+				4417D33D246450D00061BF2C /* CACFArray.cpp */,
+				4489903B24633EFD00608C25 /* CACFArray.h */,
+				44DE19EB246967A2003143E8 /* CACFDictionary.h */,
+				44DE19ED246967E7003143E8 /* CACFNumber.h */,
+				4417D3442464510E0061BF2C /* CACFString.cpp */,
+				4489902924633EFD00608C25 /* CACFString.h */,
+				4417D346246451150061BF2C /* CADebugger.cpp */,
+				4489902024633EFD00608C25 /* CADebugger.h */,
+				4417D348246451260061BF2C /* CADebugMacros.cpp */,
+				4489903724633EFD00608C25 /* CADebugMacros.h */,
+				4417D34A2464512D0061BF2C /* CADebugPrintf.cpp */,
+				4489902F24633EFD00608C25 /* CADebugPrintf.h */,
+				44179F1C2465ED960068E4B7 /* CADispatchQueue.cpp */,
+				4489903624633EFD00608C25 /* CADispatchQueue.h */,
+				44179F122465ED2D0068E4B7 /* CAException.h */,
+				4489903A24633EFD00608C25 /* CAHostTimeBase.cpp */,
+				44179F142465ED4E0068E4B7 /* CAHostTimeBase.h */,
+				4489903D24633EFD00608C25 /* CAMutex.cpp */,
+				44179F112465ED230068E4B7 /* CAMutex.h */,
+				4489903124633EFD00608C25 /* CAPropertyAddress.h */,
+				4417D311246445FE0061BF2C /* CAPThread.cpp */,
+				4417D312246445FE0061BF2C /* CAPThread.h */,
+				4417D3142464460E0061BF2C /* CARingBuffer.cpp */,
+				4489903324633EFD00608C25 /* CARingBuffer.h */,
+				4417D30F246445F20061BF2C /* CAVolumeCurve.cpp */,
+				4489902724633EFD00608C25 /* CAVolumeCurve.h */,
+			);
+			path = PublicUtility;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		44898FD524633DCF00608C25 /* RDCAudio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44898FD924633DCF00608C25 /* Build configuration list for PBXNativeTarget "RDCAudio" */;
+			buildPhases = (
+				44898FD224633DCF00608C25 /* Sources */,
+				44898FD324633DCF00608C25 /* Frameworks */,
+				44898FD424633DCF00608C25 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RDCAudio;
+			productName = RDCAudio;
+			productReference = 44898FD624633DCF00608C25 /* RDCAudio.driver */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		446371B224506C60002A96CE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = ELEMENTS;
+				TargetAttributes = {
+					44898FD524633DCF00608C25 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 446371B524506C60002A96CE /* Build configuration list for PBXProject "RDCAudio" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 446371B124506C60002A96CE;
+			packageReferences = (
+			);
+			productRefGroup = 446371BB24506C60002A96CE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				44898FD524633DCF00608C25 /* RDCAudio */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		44898FD424633DCF00608C25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		44898FD224633DCF00608C25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4489904024633EFD00608C25 /* RDC_Utils.cpp in Sources */,
+				4489900624633E0500608C25 /* RDC_AbstractDevice.cpp in Sources */,
+				4489900024633E0500608C25 /* RDC_PlugInInterface.cpp in Sources */,
+				44898FFC24633E0500608C25 /* RDC_Device.cpp in Sources */,
+				4489900B24633E0500608C25 /* RDC_PlugIn.cpp in Sources */,
+				44179F172465ED690068E4B7 /* CARingBuffer.cpp in Sources */,
+				4489900324633E0500608C25 /* RDC_TaskQueue.cpp in Sources */,
+				4489904D24633EFD00608C25 /* CAHostTimeBase.cpp in Sources */,
+				44179F192465ED7B0068E4B7 /* CADebugger.cpp in Sources */,
+				44898FFD24633E0500608C25 /* RDC_VolumeControl.cpp in Sources */,
+				44179F1B2465ED870068E4B7 /* CADebugPrintf.cpp in Sources */,
+				4489900224633E0500608C25 /* RDC_Stream.cpp in Sources */,
+				44179F162465ED630068E4B7 /* CAPThread.cpp in Sources */,
+				4489900A24633E0500608C25 /* RDC_WrappedAudioEngine.cpp in Sources */,
+				4489904124633EFD00608C25 /* RDC_Clients.cpp in Sources */,
+				44898FFF24633E0500608C25 /* RDC_Object.cpp in Sources */,
+				4489904E24633EFD00608C25 /* CAMutex.cpp in Sources */,
+				4489900824633E0500608C25 /* RDC_Control.cpp in Sources */,
+				4489900524633E0500608C25 /* RDC_NullDevice.cpp in Sources */,
+				44179F1A2465ED840068E4B7 /* CADebugMacros.cpp in Sources */,
+				4489904324633EFD00608C25 /* RDC_Client.cpp in Sources */,
+				44898FFE24633E0500608C25 /* RDC_MuteControl.cpp in Sources */,
+				44179F1E2465ED990068E4B7 /* CADispatchQueue.cpp in Sources */,
+				44179F1F2465EDA20068E4B7 /* CACFString.cpp in Sources */,
+				44179F182465ED750068E4B7 /* CACFArray.cpp in Sources */,
+				4489904224633EFD00608C25 /* RDC_ClientMap.cpp in Sources */,
+				44179F152465ED600068E4B7 /* CAVolumeCurve.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		446371C824506C62002A96CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		446371C924506C62002A96CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		44898FDA24633DCF00608C25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = V4JSMC46SY;
+				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = (
+					RDCAudio/SharedSource/,
+					RDCAudio/DeviceClients/,
+					RDCAudio/PublicUtility/,
+				);
+				INFOPLIST_FILE = RDCAudio/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				OTHER_CODE_SIGN_FLAGS = "--timestamp";
+				PRODUCT_BUNDLE_IDENTIFIER = com.syslink.RDCAudio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = driver;
+			};
+			name = Debug;
+		};
+		44898FDB24633DCF00608C25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = V4JSMC46SY;
+				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = (
+					RDCAudio/SharedSource/,
+					RDCAudio/DeviceClients/,
+					RDCAudio/PublicUtility/,
+				);
+				INFOPLIST_FILE = RDCAudio/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				OTHER_CODE_SIGN_FLAGS = "--timestamp";
+				PRODUCT_BUNDLE_IDENTIFIER = com.syslink.RDCAudio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = driver;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		446371B524506C60002A96CE /* Build configuration list for PBXProject "RDCAudio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				446371C824506C62002A96CE /* Debug */,
+				446371C924506C62002A96CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44898FD924633DCF00608C25 /* Build configuration list for PBXNativeTarget "RDCAudio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44898FDA24633DCF00608C25 /* Debug */,
+				44898FDB24633DCF00608C25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 446371B224506C60002A96CE /* Project object */;
+}
