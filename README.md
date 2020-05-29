@@ -2,7 +2,7 @@
 
 A userspace macOS audio loopback driver.
 
-Mostly based on [Kyle Neideck's BackgroundMusic app](https://github.com/kyleneideck/BackgroundMusic)
+It's derived from [Kyle Neideck's BackgroundMusic app](https://github.com/kyleneideck/BackgroundMusic)
 
 
 Build:
