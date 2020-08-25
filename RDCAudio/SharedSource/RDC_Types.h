@@ -36,9 +36,6 @@
 
 #pragma mark IDs
 
-// TODO: Change these and the other defines to const strings?
-#define kRDCDriverBundleID           "com.syslink.RDCAudio"
-
 #define kRDCDeviceUID                "RDCDevice"
 #define kRDCDeviceModelUID           "RDCDeviceModelUID"
 #define kRDCNullDeviceUID            "RDCNullDevice"

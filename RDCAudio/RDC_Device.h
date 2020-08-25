@@ -203,9 +203,6 @@ private:
     static pthread_once_t		sStaticInitializer;
     static RDC_Device* __nonnull    sInstance;
     
-    #define kDeviceName                 "ELEMENTS Remote Desktop"
-    #define kDeviceManufacturerName     "ELEMENTS"
-
 	const CFStringRef __nonnull	mDeviceName;
 	const CFStringRef __nonnull mDeviceUID;
 	const CFStringRef __nonnull mDeviceModelUID;
