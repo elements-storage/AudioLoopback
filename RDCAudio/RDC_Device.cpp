@@ -747,12 +747,12 @@ void	RDC_Device::Device_GetPropertyData(AudioObjectID inObjectID, pid_t inClient
 			{
                 // 0 would cause divide-by-zero errors in other RDC_Device functions (and
                 // wouldn't make sense anyway).
-                ((AudioValueRange*)outData)[0].mMinimum = 1.0;
+                ((AudioValueRange*)outData)[0].mMinimum = 44100.0;
                 // Just in case DBL_MAX would cause problems in a client for some reason,
                 // use an arbitrary very large number instead. (It wouldn't make sense to
                 // actually set the sample rate this high, but I don't know what a
                 // reasonable maximum would be.)
-                ((AudioValueRange*)outData)[0].mMaximum = 1000000000.0;
+                ((AudioValueRange*)outData)[0].mMaximum = 192000.0;
 			}
 			
 			//	report how much we wrote
